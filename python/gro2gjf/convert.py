@@ -9,7 +9,7 @@ from decimal import Decimal
 class Element(object):
 
     def __init__(self, *args):
-        self.e = agrs[0]
+        self.e = args[0]
         self.index = int(args[1])
         self.x = Decimal(args[2])*10
         self.y = Decimal(args[3])*10
