@@ -8,12 +8,12 @@ from decimal import Decimal
 
 class Element(object):
 
-    def __init__(self, *agrs):
+    def __init__(self, *args):
         self.e = agrs[0]
-        self.index = int(agrs[1])
-        self.x = Decimal(agrs[2])*10
-        self.y = Decimal(agrs[3])*10
-        self.z = Decimal(agrs[4])*10
+        self.index = int(args[1])
+        self.x = Decimal(args[2])*10
+        self.y = Decimal(args[3])*10
+        self.z = Decimal(args[4])*10
 
     def export2Str(self, limit):
         if limit:
